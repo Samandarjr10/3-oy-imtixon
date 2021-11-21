@@ -4621,9 +4621,9 @@ var pokemons = [
 
 var elList = document.querySelector("#list");
     
-var pokemonsTwo = pokemons.slice(0, 20);
+// var pokemonsTwo = pokemons.slice(0, 20);
 
-for (var item in pokemonsTwo) {
+for (var item in pokemons) {
 
     var newImg = document.createElement("img");
     var newH2 = document.createElement("h2");
@@ -4631,10 +4631,10 @@ for (var item in pokemonsTwo) {
     var newLi = document.createElement("li");
     
     newLi.classList.add("list__item");
-    newImg.setAttribute("src", pokemonsTwo[item].img);
+    newImg.setAttribute("src", pokemons[item].img);
     newImg.setAttribute("alt", "pokemon");
-    newH2.textContent = pokemonsTwo[item].name
-    newP.textContent = pokemonsTwo[item].type
+    newH2.textContent = pokemons[item].name
+    newP.textContent = pokemons[item].type
 
     newLi.appendChild(newImg);
     newLi.appendChild(newH2);
